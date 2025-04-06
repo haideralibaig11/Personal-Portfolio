@@ -1,0 +1,537 @@
+@font-face {
+    font-family: inter;
+    src: url(./static/inter/Inter-ExtraLight-BETA.otf);
+    src: url(./static/inter/Inter-Light-BETA.otf);
+    src: url(./static/inter/Inter-Medium.otf);
+    src: url(./static/inter/Inter-Regular.otf);
+    src: url(./static/inter/Inter-Bold.otf);
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'inter';
+    background-color: var(--color-grey);
+}
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* -------- Variables ------- */
+
+:root {
+    --color-black: #000000;
+    --color-grey: #D7D7D7;
+    --light-black: #1A1A1A;
+    --color-white: #FFFFFF;
+}
+
+/* ------- NavBar Start ------- */
+
+.portfolio header {
+    background-image: url(./static/images/headerBackground.svg);
+    height: 100vh;
+    padding-top: 16px;
+}
+.portfolio header .navbar {
+    background: none;
+    display: flex;
+    gap: 8px;
+    justify-content: flex-end;
+    padding: 10px 65px;
+}
+.portfolio header .navbar .navItem {
+    color: var(--color-white);
+    text-decoration: none;
+    display: block;
+    font-size: 17px;
+    font-weight: 700;
+    padding: 10px 16px;
+}
+.portfolio header .navbar .contactBtn {
+    background-color: var(--color-white);
+    color: var(--color-black);
+    text-decoration: none;
+    display: block;
+    font-size: 17px;
+    font-weight: 700;
+    padding: 10px 16px;
+    border-radius: 30px;
+}
+.portfolio header .navbar .navItem:hover,
+.portfolio header .navbar .contactBtn:hover,
+.portfolio header .navbar .contactBtn:hover {
+    opacity: 0.9;
+    transition: all 0.1s ease-in-out;
+}
+.portfolio .headerContent {
+    position: absolute;
+    top: 28%;
+    left: 20%;
+}
+.portfolio .headerContent h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--color-black);
+    margin-bottom: 15px;
+}
+.portfolio .headerContent h1 {
+    font-size: 80px;
+    font-weight: 700;
+    color: var(--color-black);
+}
+.portfolio .headerContent p {
+    font-size: 25px;
+    font-weight: 700;
+    color: #909090;
+    margin-bottom: 46px;
+}
+.portfolio .headerContent .accountLinks {
+    display: flex;
+    gap: 31px;
+}
+.portfolio .headerContent .accountLinks .account {
+    background-color: #C4C4C4;
+    padding: 10px 14px;
+    box-shadow: 2px 2px 4px 0px #141414;
+}
+.portfolio .headerContent .accountLinks .account:hover {
+    opacity: 0.8;
+    transition: all 0.1s ease-in-out;
+}
+.portfolio .headerContent .accountLinks a {
+    text-decoration: none;
+    display: block;
+    width: 61px;
+    height: 56px;
+}
+.portfolio .headerContent .accountLinks a img {
+    width: 100%;
+    height: 100%;
+}
+
+/* ------- About Start ------- */
+
+.portfolio .about {
+    padding: 142px 0;
+}
+.portfolio .about .aboutHeading {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 14px;
+    color: var(--color-black);
+    border: 4px solid var(--color-black);
+    width: 26.565%;
+    margin: 0 auto 58px auto;
+    padding: 18px 0px;
+}
+.portfolio .about .aboutTxt {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 28px;
+    width: 768px;
+    margin: 0px auto 67px auto;
+}
+.portfolio .about .seprate {
+    text-align: center;
+}
+
+/* ------- Skills Start ------- */
+
+.portfolio .skills {
+    padding: 0;
+    margin-bottom: 142px;
+}
+.portfolio .skills .skillsHeading {
+    text-transform: uppercase;
+    font-size: 26px;
+    font-weight: 500;
+    color: var(--color-black);
+    margin-bottom: 75px;
+    letter-spacing: 6px;
+}
+.portfolio .skills .usingNow {
+    width: 61.679%;
+    margin: 0 auto 102px auto;
+}
+.portfolio .skills .usingNow .currentSkills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.portfolio .skills .learning .currentSkills {
+    justify-content: space-between;
+}
+.portfolio .skills .usingNow .currentSkills .skill {
+    padding: 18px 47px;
+}
+.portfolio .skills .learning .currentSkills .skill {
+    padding: 0;
+}
+.portfolio .skills .usingNow .skill .skillImg {
+    width: 84px;
+    height: 100px;
+    margin: 0 auto 8px auto;
+    display: block;
+}
+.portfolio .skills .usingNow .skill .skillImg img {
+    width: 100%;
+    height: 100%;
+}
+.portfolio .skills .usingNow .skill p {
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--color-black);
+    text-align: center;
+}
+
+/* ------- Certificate ------- */
+
+.portfolio .certificate .skillsHeading {
+    margin-bottom: 16px;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.portfolio .certificate .usingNow .skill p {
+    text-align: start;
+    line-height: 32px;
+}
+.portfolio .certificate .skillsHeading a {
+    height: 22px;
+    width: 22px;
+    display: block;
+}
+.portfolio .certificate .skillsHeading a img {
+    height: 100%;
+    width: 100%;
+}
+.portfolio .skills .usingNow .skill h4 {
+    margin-bottom: 34px;
+    text-align: center;
+}
+.portfolio .certificate .aboutHeading {
+    letter-spacing: 7px;
+}
+.portfolio .skills .certificate .usingNow .currentSkills .skill {
+    padding: 0px !important;
+}
+
+/* ------- Contact ------- */
+.portfolio .contact {
+    padding: 0px 0px 142px 0px;
+}
+.portfolio .contact .emailAddress {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    gap: 12px;
+}
+.portfolio .contact .emailAddress .emailLabel {
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--color-black);
+}
+.portfolio .contact .emailAddress .email {
+    font-size: 18px;
+    font-weight: 300;
+}
+.portfolio .contact .emailAddress .email a {
+    text-decoration: none;
+    color: #909090;
+}
+.portfolio .contact .contactInfo {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+/* ------- Footer -------- */
+
+.portfolio footer {
+    background-color: #1A1A1A;
+    padding: 38px 0px;
+    text-align: center;
+}
+.portfolio footer .backBtn a {
+    text-decoration: none;
+    display: block;
+    color: var(--color-white);
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.portfolio footer .backBtn a img {
+    height: 20px;
+    width: 20px;
+    display: block;
+    margin: 0 auto 7px auto;
+}
+.portfolio footer p {
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--color-white);
+}
+.portfolio footer p span {
+    font-weight: 500;
+}
+
+
+/* ------- Media Queries ------- */
+
+@media only screen and (max-width: 1200px) {
+
+    /* --- Navbar --- */
+    .portfolio header .navbar .navItem {
+        font-size: 16px;
+    }
+    .portfolio header .navbar .contactBtn {
+        font-size: 16px;
+    }
+
+    /* --- Header --- */
+    .portfolio .headerContent h2 {
+        font-size: 32px;
+        margin-bottom: 13px;
+    }
+    .portfolio .headerContent h1 {
+        font-size: 65px;
+    }
+    .portfolio .headerContent p {
+        font-size: 22px;
+        margin-bottom: 40px;
+    }
+
+    /* --- About --- */
+    .portfolio .about .aboutHeading {
+        font-size: 22px;
+        letter-spacing: 12px;
+    }
+    .portfolio .certificate .aboutHeading {
+        letter-spacing: 7px;
+    }
+
+    /* --- Skills --- */
+    .portfolio .skills .skillsHeading {
+        font-size: 24px;
+        margin-bottom: 60px;
+        letter-spacing: 5px;
+    }
+    .portfolio .skills .usingNow .skill p {
+        font-size: 17px;
+    }
+
+    /* --- Certificate --- */
+
+    .portfolio .certificate .skillsHeading {
+        font-size: 20px;
+        margin-bottom: 22px;
+    }
+    .portfolio .skills .usingNow {
+        width: 76.679%;
+        margin: 0 auto 72px auto;
+    }
+    .portfolio .certificate .usingNow .skill p {
+        line-height: 28px;
+        font-size: 17px;
+    }
+    /* --- Contact --- */
+
+    .portfolio .contact .emailAddress .emailLabel {
+        font-size: 22px;
+    }
+
+    /* --- Footer --- */
+    .portfolio footer .backBtn a {
+        font-size: 14px;
+    }
+    .portfolio footer p {
+        font-size: 17px;
+    }
+}
+
+
+@media only screen and (max-width: 992px) {
+
+    /* --- Navbar --- */
+    .portfolio header .navbar .navItem {
+        font-size: 15px;
+    }
+    .portfolio header .navbar .contactBtn {
+        font-size: 15px;
+    }
+
+    /* --- Header --- */
+    .portfolio .headerContent h2 {
+        font-size: 26px;
+        margin-bottom: 10px;
+    }
+    .portfolio .headerContent h1 {
+        font-size: 55px;
+    }
+    .portfolio .headerContent p {
+        font-size: 20px;
+        margin-bottom: 34px;
+    }
+
+    /* --- About --- */
+
+    .portfolio .about .aboutHeading {
+        font-size: 20px;
+        letter-spacing: 10px;
+    }
+
+    /* --- Skills --- */
+
+    .portfolio .skills .skillsHeading {
+        font-size: 22px;
+        margin-bottom: 55px;
+    }
+    .portfolio .skills .usingNow .skill p {
+        font-size: 16px;
+    }
+    .portfolio .about .aboutHeading {
+        letter-spacing: 7px;
+    }
+
+    /* --- Certificate --- */
+
+    .portfolio .skills .skillsHeading {
+        font-size: 20px;
+        margin-bottom: 27px;
+    }
+
+    /* --- Conatct --- */
+
+    .portfolio .contact .emailAddress .emailLabel {
+        font-size: 20px;
+    }
+
+    /* --- Footer --- */
+
+    .portfolio footer .backBtn a {
+        font-size: 13px;
+    }
+    .portfolio footer p {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    /* --- Navbar --- */
+    .portfolio header .navbar .navItem {
+        font-size: 14px;
+    }
+    .portfolio header .navbar .contactBtn {
+        font-size: 14px;
+    }
+
+    /* --- Header --- */
+    .portfolio .headerContent h2 {
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+    .portfolio .headerContent h1 {
+        font-size: 46px;
+    }
+    .portfolio .headerContent p {
+        font-size: 18px;
+        margin-bottom: 29px;
+    }
+    .portfolio .about {
+        padding: 100px 0 !important;
+    }
+
+    /* --- About --- */
+
+    .portfolio .about {
+        padding: 100px 0;
+    }
+    .portfolio .about .aboutHeading {
+        margin: 0 auto 40px auto;
+    }
+
+    /* --- Skills --- */
+
+    .portfolio .about {
+        padding: 100px 0;
+    }
+
+    .portfolio .about .aboutHeading {
+        margin: 0 auto 40px auto;
+    }
+
+    /* --- Certificate --- */
+
+    .portfolio .skills {
+        margin-bottom: 100px;
+    }
+
+    /* --- Footer --- */
+
+    .portfolio footer .backBtn a {
+        font-size: 12px;
+    }
+    .portfolio footer p {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+
+    /* --- Navbar --- */
+    .portfolio header .navbar .navItem {
+        font-size: 14px;
+    }
+    .portfolio header .navbar .contactBtn {
+        font-size: 14px;
+    }
+
+    /* --- Header --- */
+    .portfolio header {
+        height: 75vh;
+    }
+    .portfolio .headerContent h1 {
+        font-size: 46px;
+    }
+    .portfolio .headerContent h2 {
+        font-size: 22px;
+        margin-bottom: 6px;
+    }
+    .portfolio .headerContent p {
+        font-size: 16px;
+        margin-bottom: 29px;
+    }
+
+    /* --- About --- */
+    .portfolio .about {
+        padding: 100px 0px !important;
+    }
+    .portfolio .about .aboutTxt {
+        font-size: 12px !important;
+    }
+
+    /* --- Certificate --- */
+
+    .portfolio .skills .usingNow .skill p {
+        font-size: 12px;
+        line-height: 30px;
+    }
+
+    /* --- Footer --- */
+
+    .portfolio footer .backBtn a {
+        font-size: 12px;
+    }
+    .portfolio footer p {
+        font-size: 12px !important;
+    }
+}
